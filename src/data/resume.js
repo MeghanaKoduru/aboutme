@@ -60,6 +60,16 @@ export const experience = [
 
 export const projects = [
   {
+    title: 'YouTube Media Coverage & Sentiment Analytics',
+    subtitle: 'Air India AI171 Crash Coverage · 2025',
+    description:
+      'End-to-end pipeline over 93 news videos and 17.8K comments: Python cleaning, a SQLite layer with 15 business queries, VADER sentiment, and a self-contained interactive dashboard. Showed the top 5 of 42 channels captured 52% of 45M views, and that comment tone was sombre rather than hostile.',
+    // Card click opens the live dashboard; the Code link opens the repo
+    link: 'https://meghanakoduru.github.io/air-india-youtube-analytics/',
+    github: 'https://github.com/MeghanaKoduru/air-india-youtube-analytics',
+    tags: ['Python', 'SQLite', 'VADER', 'Text Mining', 'Dashboard'],
+  },
+  {
     title: 'Real-Time ML Deployment',
     subtitle: 'Graduate Cloud ML Ops Capstone · 2025',
     description:
