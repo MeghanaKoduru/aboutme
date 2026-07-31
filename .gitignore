@@ -1,0 +1,6 @@
+node_modules
+dist
+.DS_Store
+*.local
+# Local editor/agent config (contains machine-specific paths)
+.claude
