@@ -55,15 +55,14 @@ Outputs a static site to `dist/`. Preview it locally with `npm run preview`.
 
 The site is fully static — no backend, no environment variables.
 
-**Vercel:** `npx vercel` from the project root (or import the repo at vercel.com).
-Framework preset: *Vite*. Build command `npm run build`, output directory `dist`.
+**GitHub Pages (current setup):** every push to `main` triggers
+[`.github/workflows/deploy.yml`](.github/workflows/deploy.yml), which builds the site
+and publishes it to <https://meghanakoduru.github.io/portifolio_project/>. No manual
+steps needed. The `base` option in `vite.config.js` must match the repo name.
 
-**Netlify:** `npx netlify deploy --prod` (or import the repo at netlify.com).
-Build command `npm run build`, publish directory `dist`.
-
-**GitHub Pages:** build, then push `dist/` with your tool of choice. If serving from a
-subpath (e.g. `username.github.io/portfolio`), set `base: '/portfolio/'` in
-`vite.config.js` first.
+**Vercel / Netlify (alternative):** import the repo at vercel.com or netlify.com —
+both auto-detect Vite (build `npm run build`, output `dist`). If you switch, change
+`base` in `vite.config.js` back to `'/'`.
 
 ## Updating content
 
