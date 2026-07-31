@@ -56,14 +56,15 @@ Outputs a static site to `dist/`. Preview it locally with `npm run preview`.
 The site is fully static — no backend, no environment variables.
 
 **GitHub Pages (current setup):** the site is published from the `gh-pages` branch to
-<https://meghanakoduru.github.io/aboutme/>. After making changes, redeploy with:
+<https://meghanakoduru.github.io/>. After making changes, redeploy with:
 
 ```bash
 npm run deploy
 ```
 
 That builds the site and pushes `dist/` to `gh-pages` (see `scripts/deploy.sh`).
-The `base` option in `vite.config.js` must match the repo name.
+As a user site (repo named `meghanakoduru.github.io`), it serves from the root path,
+so `base` in `vite.config.js` stays `'/'`.
 
 **Vercel / Netlify (alternative):** import the repo at vercel.com or netlify.com —
 both auto-detect Vite (build `npm run build`, output `dist`). If you switch, change
