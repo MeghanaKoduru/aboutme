@@ -11,7 +11,7 @@ export const profile = {
   email: 'meghanakoduru4@gmail.com',
   linkedin: 'https://linkedin.com/in/meghanakodur',
   github: 'https://github.com/MeghanaKoduru',
-  // BASE_URL keeps the link working both locally ("/") and on GitHub Pages ("/portifolio_project/")
+  // BASE_URL keeps the link working both locally ("/") and on GitHub Pages ("/aboutme/")
   resumeFile: `${import.meta.env.BASE_URL}Meghana_Koduru_Resume.pdf`,
   about: [
     `I'm a data analyst in the Bay Area who likes the whole journey of a dataset — from raw,

@@ -55,10 +55,15 @@ Outputs a static site to `dist/`. Preview it locally with `npm run preview`.
 
 The site is fully static — no backend, no environment variables.
 
-**GitHub Pages (current setup):** every push to `main` triggers
-[`.github/workflows/deploy.yml`](.github/workflows/deploy.yml), which builds the site
-and publishes it to <https://meghanakoduru.github.io/portifolio_project/>. No manual
-steps needed. The `base` option in `vite.config.js` must match the repo name.
+**GitHub Pages (current setup):** the site is published from the `gh-pages` branch to
+<https://meghanakoduru.github.io/aboutme/>. After making changes, redeploy with:
+
+```bash
+npm run deploy
+```
+
+That builds the site and pushes `dist/` to `gh-pages` (see `scripts/deploy.sh`).
+The `base` option in `vite.config.js` must match the repo name.
 
 **Vercel / Netlify (alternative):** import the repo at vercel.com or netlify.com —
 both auto-detect Vite (build `npm run build`, output `dist`). If you switch, change
